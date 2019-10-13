@@ -2,7 +2,7 @@
 a Laravel Image Based on official PHP images, use version 7.3, easy and useful.<br>
 the command to run this image: <br>
 
-    docker run -ti -p 8080:80 --name laravel6.x thinkeramir/laravel6.x
+    docker run -ti -p 8080:80 --name laravel6.x -d thinkeramir/laravel6.x
     
 attach to the container look like this command:
 ```
