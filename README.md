@@ -6,3 +6,26 @@ the command to run this image: <br>
 you are logged into the container and now it is enough to run a command for creating a fresh Laravel app:
 
     laravel new blog
+
+##### if you need in docker-compose, you can use below code:
+*docker-compose.yml*
+
+```
+version: '3'
+
+services:
+
+  web:
+    container_name: laravel6.x
+    image: thinkeramir/laravel6.x
+    volumes:
+      - ./blog:/var/www/html/blog
+    ports:
+      - 8080:80
+    restart: always
+
+```
+and then
+```
+docker-compose up
+```
