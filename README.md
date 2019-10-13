@@ -6,7 +6,7 @@ the command to run this image: <br>
     
 attach to the container look like this command:
 ```
-    docker exec -ti laravel6.x bash
+docker exec -ti laravel6.x bash
 ```
 
 you are logged into the container and now it is enough to run a command for creating a fresh Laravel app:
