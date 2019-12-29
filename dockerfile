@@ -1,6 +1,6 @@
 FROM php:7.3-apache
 WORKDIR /var/www/html
-RUN apt-get update && apt-get install -y libxml2-dev zlib1g-dev libzip-dev libbz2-dev unzip \
+RUN apt-get update && apt-get install -y libxml2-dev zlib1g-dev libzip-dev libbz2-dev unzip vim git cron \
 && docker-php-ext-install mbstring ctype bcmath pdo pdo_mysql json xml zip bz2 opcache \
 && EXPECTED_SIGNATURE=$(curl -q -sS https://composer.github.io/installer.sig) \
 && php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
